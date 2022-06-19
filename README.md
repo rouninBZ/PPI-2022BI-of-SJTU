@@ -1,2 +1,2 @@
 # PPI-2022BI-of-SJTU
-Just a PPI ,includes BFS\Floyd\Dijkstra/SPFA.
+Just a PPI ,includes DFS\Floyd\Dijkstra/SPFA.
