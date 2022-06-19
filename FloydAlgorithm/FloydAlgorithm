@@ -1,0 +1,15 @@
+    int i,j,k,t;
+    for(k = 1; k <= N; k++){
+        for(i = 1; i <= N; i++){
+            if(k != i){
+                t = (k<i) ? A[i][k] : A[k][i];
+                if(t == Inf)  continue;
+                for(j = 1; j <= ((k<i)?k:i); j++){
+                    if(t+A[k][j] < A[i][j])  A[i][j] = t + A[k][j];
+                }
+                for(j = k+1; j <= i; j++){
+                    if(t+A[j][k] < A[i][j])  A[i][j] = t + A[j][k];
+                }
+            }
+        }
+    }
