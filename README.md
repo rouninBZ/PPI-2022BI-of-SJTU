@@ -1,5 +1,5 @@
 # PPI-2022BI-of-SJTU
-With the help of DFS\Floyd algorithm\Dixtra algorithm\Bellman-Ford algorithm, the shortest path generation in PPI is realized.  
+With the help of DFS\Floyd algorithm\Dijkstra's algorithm\Bellman-Ford algorithm, the shortest path generation in PPI is realized.  
 This is an open source project where you can do some work on the shortest path problem in graph networks by installing and using our library.  
 If you find any bugs, potential bugs, or improvements, please report them directly to us in the Issue section. Or send an email to  huntshowdown@sjtu.edu.cn  
 Thank you for your support and understanding!  
