@@ -1,0 +1,22 @@
+def BFA(graph, source):
+    dst = {}
+    p = {}
+#呜呜，还是Python好，可以直接用无穷大保留字
+    for v in graph:
+        dst[v] = float('inf')
+        p[v] = None
+    dst[source] = 0
+#迭代迭代
+    for i in range(len( graph ) - 1):
+        for u in graph:
+            for v in graph[u]:
+                if dst[v] > graph[u][v] + dst[u]:
+                    dst[v] = graph[u][v] + dst[u]
+                    p[v] = u 
+#判断有无哈密顿回路
+    for u in graph:
+        for v in graph[u]:
+            if dst[v] > dst[u] + graph[u][v]:
+                return None, None
+ 
+    return dst, p
